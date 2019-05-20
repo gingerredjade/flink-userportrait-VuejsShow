@@ -1,7 +1,7 @@
 <template>
-<div>
-  <x-chart id="high" class="high" :option="option1"></x-chart>
- </div>
+  <div>
+    <x-chart id="high" class="high" :option="option1"></x-chart>
+  </div>
 </template>
 <script>
   // 导入chart组件
@@ -59,8 +59,8 @@
     mounted:function(){
       myvue.other.title.text = '2010 ~ 2016 年太阳能行业就业人员发展情况';
       myvue.other.subtitle.text = '数据来源：thesolarfoundation.com';
-      myvue.other.series = myvue.data;//数据
-      myvue.other.yAxis.title.text = '就业人数'; //数据
+      myvue.other.series = myvue.data;            // 数据
+      myvue.other.yAxis.title.text = '就业人数';  // 数据
       myvue.option = myvue.other;
     },
     components: {
